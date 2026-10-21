@@ -65,6 +65,7 @@ public class Menu {
     }
 
 
+    // TODO: investigate if book return works properly (and fix it if not)
     private void handleBookReturnMenu(Scanner sc){
         System.out.println("Enter book ID");
         UUID bookId = UUID.fromString(sc.nextLine());
