@@ -15,6 +15,7 @@ public class NotificationManager {
         Notification notification = new Notification(message, recipient);
         addNotification(notification);
     }
+
     private void addNotification(Notification notification){
         this.notifications.add(notification);
     }
@@ -31,4 +32,6 @@ public class NotificationManager {
         // Return all notifications for a specific user
         return this.notifications.stream().filter(notification -> notification.getRecipient().equals(user)).toList();
     }
+
+    //testkommentar
 }
